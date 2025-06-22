@@ -1,13 +1,13 @@
 # 🧠 Sathwik Voice Assistant
 
-A smart Python desktop voice assistant that listens to your voice and performs cool actions like playing YouTube songs, opening apps, telling time, searching Wikipedia, and telling jokes.
+A smart desktop voice assistant built in Python that listens to your commands and performs actions like playing YouTube videos, opening applications, telling time, searching Wikipedia, and even telling programming jokes — all with your voice!
 
 ---
 
 ## 🛠️ Tools Required
 
 - Python 3.8 or above  
-- VS Code (or any editor)  
+- VS Code (or any code editor)  
 - A microphone  
 - Internet connection (for YouTube & Wikipedia)
 
@@ -27,18 +27,20 @@ Edit
 python -m venv venv
 Activate it:
 
-Windows
+Windows:
 
 bash
 Copy
 Edit
 venv\Scripts\activate
-Mac/Linux
+Mac/Linux:
 
 bash
 Copy
 Edit
 source venv/bin/activate
+You’ll see (venv) in terminal – that means it's activated ✅
+
 📦 Step 3: Install Required Libraries
 bash
 Copy
@@ -46,12 +48,12 @@ Edit
 pip install SpeechRecognition pyttsx3 pywhatkit wikipedia pyjokes
 📚 Libraries Used
 Library	Purpose
-speech_recognition	Convert voice to text
-pyttsx3	Convert text to speech (offline)
+speech_recognition	Voice to text
+pyttsx3	Text to speech (offline)
 pywhatkit	Play YouTube videos
-wikipedia	Get topic/person summaries
-pyjokes	Tell programming jokes
-os, sys	Open apps, handle exit
+wikipedia	Get summaries
+pyjokes	Programming jokes
+os, sys	Interact with system
 
 🧠 Features
 🎤 Recognizes voice commands
@@ -60,13 +62,13 @@ os, sys	Open apps, handle exit
 
 📺 Plays YouTube videos
 
-🌐 Wikipedia info fetcher
+🌐 Fetches info from Wikipedia
 
 🃏 Tells programming jokes
 
 💻 Opens Chrome or VS Code
 
-🔁 Always listening and responding
+👂 Always listening and responding
 
 📄 Example Commands
 play nani songs
@@ -83,8 +85,6 @@ tell me a joke
 
 exit or stop
 
-✅ No YouTube link needed – it auto-plays using your voice.
-
 ▶️ How to Run the Project
 After activating the virtual environment, run:
 
@@ -92,8 +92,6 @@ bash
 Copy
 Edit
 python assistant.py
-Then just speak your commands 🎙️
-
 👨‍💻 Developed By
 Sathwik Chinta
 📧 sathwikprince2004@gmail.com
