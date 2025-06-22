@@ -1,76 +1,74 @@
 # 🧠 Sathwik Voice Assistant
 
-A smart desktop voice assistant built in Python that listens to your commands and performs actions like playing YouTube videos, opening applications, telling time, searching Wikipedia, and even telling programming jokes — all with your voice!
+A smart desktop voice assistant built in Python that responds to your voice commands to perform tasks like playing YouTube videos, telling the time, fetching Wikipedia information, opening applications, and telling programming jokes.
 
 ---
 
-## 🛠️ Tools Required
+## 🛠️ Requirements
 
 - Python 3.8 or above  
-- VS Code (or any code editor)  
-- A microphone  
-- Internet connection (for YouTube & Wikipedia)
+- Visual Studio Code (or any code editor)  
+- Microphone  
+- Internet connection (for YouTube/Wikipedia features)
 
 ---
 
-## 🧪 Setup Instructions
+## ⚙️ Setup Instructions
 
-### 📁 Step 1: Create Project Folder
+### 1️⃣ Create and Navigate to Project Folder
 
 ```bash
 mkdir voice-desktop-assistant
 cd voice-desktop-assistant
-🌐 Step 2: Create & Activate Virtual Environment
+2️⃣ Create & Activate Virtual Environment
 bash
 Copy
 Edit
 python -m venv venv
 Activate it:
 
-Windows:
+On Windows:
 
 bash
 Copy
 Edit
 venv\Scripts\activate
-Mac/Linux:
+On Mac/Linux:
 
 bash
 Copy
 Edit
 source venv/bin/activate
-You’ll see (venv) in terminal – that means it's activated ✅
-
-📦 Step 3: Install Required Libraries
+3️⃣ Install Required Libraries
 bash
 Copy
 Edit
 pip install SpeechRecognition pyttsx3 pywhatkit wikipedia pyjokes
 📚 Libraries Used
 Library	Purpose
-speech_recognition	Voice to text
-pyttsx3	Text to speech (offline)
+speech_recognition	Convert voice to text
+pyttsx3	Convert text to speech (offline)
 pywhatkit	Play YouTube videos
-wikipedia	Get summaries
-pyjokes	Programming jokes
-os, sys	Interact with system
+wikipedia	Fetch summaries from Wikipedia
+pyjokes	Generate programming jokes
+os, sys	Open apps and handle system exit
 
-🧠 Features
-🎤 Recognizes voice commands
+💡 Features
+🎙️ Voice command recognition
 
-🕐 Tells current time
+⏰ Tells current time
 
 📺 Plays YouTube videos
 
-🌐 Fetches info from Wikipedia
+🌐 Provides Wikipedia summaries
 
 🃏 Tells programming jokes
 
-💻 Opens Chrome or VS Code
+💻 Opens applications (Chrome, VS Code)
 
-👂 Always listening and responding
+🔁 Runs continuously, always listening
 
-📄 Example Commands
+🗣️ Example Voice Commands
 play nani songs
 
 what's the time
@@ -85,14 +83,37 @@ tell me a joke
 
 exit or stop
 
-▶️ How to Run the Project
-After activating the virtual environment, run:
+✅ No need to provide YouTube links – videos are fetched automatically based on voice input.
+
+▶️ Running the Project
+Activate your virtual environment and run:
 
 bash
 Copy
 Edit
 python assistant.py
+Speak your command and watch the assistant respond in real time!
+
 👨‍💻 Developed By
 Sathwik Chinta
 📧 sathwikprince2004@gmail.com
-🔗 GitHub Project
+🔗 GitHub Repository
+
+🗂️ Optional: Project Metadata (YAML)
+For automation or DevOps purposes, you may include a basic metadata file like this:
+
+yaml
+Copy
+Edit
+project: Sathwik Voice Assistant
+author: Sathwik Chinta
+email: sathwikprince2004@gmail.com
+language: Python
+future_use:
+  - Voice assistant project
+  - Speech recognition features
+  - YouTube + Wikipedia integration
+  - Application launcher
+📌 License
+This project is licensed under the MIT License.
+Feel free to use, modify, and share it with credit.
